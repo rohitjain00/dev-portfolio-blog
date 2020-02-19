@@ -1,8 +1,10 @@
-[![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
+
 
 # dev-portfolio-blog
 
-This is a minimal jekyll theme.
+This is a minimal jekyll theme for writing blogs and about yourself.
 
 ## Desktop Preview
 
@@ -73,6 +75,7 @@ author_name: your-name
 ```
 
 Replace "some-text" with your text
+
 Replace "your-name" with your name
 
 ## Contributing

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dev-portfolio-blog"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.2"
   spec.authors       = ["Rohit Jain"]
   spec.email         = ["rohitjain18005@gmail.com"]
 
@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/rohitjain00/dev-portfolio-blog"
   spec.license       = "MIT"
 
-  spec.files         = spec.files = `git ls-files -z`.split('\x0').select do |f|
-    f.match(%r{^(_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
+  spec.files = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.8"
