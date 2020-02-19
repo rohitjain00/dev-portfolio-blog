@@ -1,7 +1,8 @@
 ---
 layout: description
 ---
-<h2>{{ post.title }}</h2>
+<h2>{{ page.title }}</h2>
+<small>{{ post.date | date_to_string }}</small>
 {{content}}
 
 {% if page.comments%}

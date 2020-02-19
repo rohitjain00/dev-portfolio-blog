@@ -2,14 +2,30 @@
 layout: description
 title: Blog
 pagetype: blog
+pagination:
+  enabled: true
 ---
-<div class="blog-section-list">
-    <ul>
-        {% for post in site.posts  %}
-            <li>
-                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                <p>{{ post.excerpt }}</p>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
+<!-- This loops through the paginated posts -->
+<ul>
+    {% for post in paginator.posts %}
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <small>{{ post.date | date_to_string }}</small>
+        <p>{{ post.excerpt }}</p>
+    {% endfor %}
+</ul>
+<hr>
+{% if paginator.total_pages > 1 %}
+<ul>
+
+    {% if paginator.previous_page %}
+        <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+        </li>
+    {% endif %}
+    {% if paginator.next_page %}
+        <li>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+        </li>
+    {% endif %}
+</ul>
+{% endif %}
