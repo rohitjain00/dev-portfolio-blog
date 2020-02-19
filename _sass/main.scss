@@ -1,0 +1,187 @@
+@mixin mediaQuery($point) {
+   @if $point == phone-width {
+      @media (max-width: 480px) { @content; }
+    }
+    @else if $point == tablet-width {
+        @media (max-width: 768px) { @content; }
+    }
+  }
+body {
+    background-color: white;
+    color: #222;
+    // font-family: ;
+    font-size: 120%;
+
+    .mid-section-home {
+        text-align: center;
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 400px;
+        height: 350px;
+        margin: auto;
+        font-size: 1.5rem;
+
+        @include mediaQuery(phone-width) {
+            font-size: 1 rem;
+            height: 350px;
+            width: 100%;
+            span {
+                display: none;
+            }
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .sub-heading {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            .summary-about-me {
+                width: 50%;
+                text-align: right;
+                padding-right: 20px;
+            }
+            .nav-link {
+                ul {
+                    padding-inline-start: 0px;
+                }
+                li {
+                    display: block;
+                    text-align: left;
+                    a {
+                        text-decoration : none;
+                        color: #222;
+                        &:hover {
+                            border-bottom: 2px solid black;
+                            color: #333;
+                        }
+                    }
+                }
+
+                border-left: 2px solid black;
+                width: 50%;
+                padding-left: 20px;
+                // .toNav {
+                // }
+                @include mediaQuery(phone-width) {
+                    li {
+                        display: block;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            @include mediaQuery(phone-width) {
+                width: 60%;
+                min-width: 270px;
+            }
+        }
+    }
+    .mid-section-cover {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            border-bottom: 2px solid  #222;
+            * {
+                margin: 10px 10px;
+            }
+
+            h1 {
+                // align-self: flex-start;
+                font-size: 40px;
+            }
+            ul {
+                flex-shrink: 1;
+                padding: 0px 10px;
+                li {
+                    padding: 0px 10px;
+                    display: inline-block;
+                    a {
+                        text-decoration : none;
+                        color: #222;
+                        &:hover {
+                            border-bottom: 2px solid black;
+                            color: #333;
+                        }
+                    }
+                    @include mediaQuery(phone-width) {
+                        text-align: center;
+                        padding: 0px 10px;
+                    }
+                }
+            }
+            @include mediaQuery(phone-width) {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                * {
+                    flex-basis: 100%;
+                }
+            }
+        }
+
+        .sub-mid-section-cover {
+            width: 90%;
+            margin: 0 auto;
+
+            * {
+                max-width: 100%;
+                overflow-x: scroll;
+            }
+            a {
+                color: black;
+            }
+            .blog-section-list {
+                a {
+                    color: black;
+                }
+            }
+        }
+        @include mediaQuery(tablet-width) {
+            width: 70%;
+        }
+        @include mediaQuery(phone-width) {
+            width: 95%;
+        }
+    }
+    // .page_trail {
+    //     text-align: right;
+    //     font-size: 30px;
+    //     ul {
+    //         li {
+    //             display: inline-block;
+    //             padding: 2px;
+    //             a {
+    //                 text-decoration: none;
+    //                 color: #222;
+    //                 &:hover {
+    //                     color: #222;
+    //                     border-bottom: 1px solid black;
+    //                 }
+    //             }
+    //         }
+    //         .selected {
+    //             a {
+    //                 color: #222;
+    //                 border-bottom: 1px solid black;
+    //             }
+
+    //         }
+    //     }
+    // }
+
+    .container-404 {
+        text-align: center;
+    }
+}

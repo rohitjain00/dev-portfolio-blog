@@ -1,0 +1,22 @@
+---
+layout: description
+---
+<ul>
+    {% if page.contenttype == project %}
+        {% for post in paginator.posts %}
+            <li>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p>{{ post.excerpt }}</p>
+            </li>
+        {% endfor %}
+    {% elsif page.contenttype == project %}
+        {% for post in site.posts %}
+            {% if post.contenttype == page.pagetype %}
+                <li>
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <p>{{ post.excerpt }}</p>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</ul>
