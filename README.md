@@ -1,6 +1,6 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  [![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
-
+![](https://ruby-gem-downloads-badge.herokuapp.com/dev-portfolio-blog)
 
 # dev-portfolio-blog
 
