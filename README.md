@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b5c24883d10c4ec39086b230ac15adea)](https://app.codacy.com/manual/rohitjain00/dev-portfolio-blog?utm_source=github.com&utm_medium=referral&utm_content=rohitjain00/dev-portfolio-blog&utm_campaign=Badge_Grade_Settings)
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  [![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
 ![](https://ruby-gem-downloads-badge.herokuapp.com/dev-portfolio-blog)
