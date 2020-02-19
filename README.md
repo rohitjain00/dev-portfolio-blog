@@ -52,6 +52,7 @@ To start using the theme you need to create and edit some extra files in the roo
 
 ```yaml
 layout: blog
+title: blog
 permalink: /blog/
 ```
 
@@ -62,24 +63,29 @@ layout: description
 permalink: /about/
 ```
 
-3. In the `_congif.yml` file add a key `resume_url` and set it to the path of the Resume.
+3. In the `_congif.yml` file add a key `resume_url` and set it to the path of the Resume. Also add `author_name` to your name to appear on the website.
 
 For example if the Resume is located in the root directory
 
 ```yaml
 resume_url: 'Resume.pdf'
+author_name: [YOUR-NAME]
 ```
 
-4. In the `index.md` file add
+### Pagination
+
+Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
+
+Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml).
+
+
+1. In the `index.md` file add
 
 ```yaml
 home_text : some-text
-author_name: your-name
 ```
 
 Replace "some-text" with your text
-
-Replace "your-name" with your name
 
 ## Contributing
 
