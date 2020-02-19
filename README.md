@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
+
 # dev-portfolio-blog
 
 This is a minimal jekyll theme.
