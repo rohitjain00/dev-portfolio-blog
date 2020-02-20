@@ -48,7 +48,7 @@ body {
             }
             .nav-link {
                 ul {
-                    padding-inline-start: 0px;
+                    padding-inline-start: 0;
                 }
                 li {
                     display: block;
@@ -94,7 +94,7 @@ body {
             flex-wrap: wrap;
             border-bottom: 2px solid  #222;
             * {
-                margin: 10px 10px;
+                margin: 10px;
             }
 
             h1 {
@@ -103,9 +103,9 @@ body {
             }
             ul {
                 flex-shrink: 1;
-                padding: 0px 10px;
+                padding: 0 10px;
                 li {
-                    padding: 0px 10px;
+                    padding: 0 10px;
                     display: inline-block;
                     a {
                         text-decoration : none;
@@ -117,7 +117,7 @@ body {
                     }
                     @include mediaQuery(phone-width) {
                         text-align: center;
-                        padding: 0px 10px;
+                        padding: 0 10px;
                     }
                 }
             }
