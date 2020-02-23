@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dev-portfolio-blog"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.4"
   spec.authors       = ["Rohit Jain"]
   spec.email         = ["rohitjain18005@gmail.com"]
 
@@ -15,10 +15,11 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.8"
-  spec.add_runtime_dependency "jekyll-seo-tag"
-  spec.add_runtime_dependency "jekyll-feed"
-  spec.add_runtime_dependency "jekyll-sitemap"
-  spec.add_runtime_dependency "jekyll-paginate-v2"
-  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.13.0"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
+  spec.add_runtime_dependency "jekyll-paginate-v2", "~> 1.9.4"
+  spec.add_runtime_dependency "jekyll-minifier", "~> 0.1.10"
+  spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "rake", "~> 12.0"
 end
