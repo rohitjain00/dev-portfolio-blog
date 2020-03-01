@@ -5,6 +5,19 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/rohitjain00/dev-portfolio-blog/badge)](https://www.codefactor.io/repository/github/rohitjain00/dev-portfolio-blog)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0b9f1c23f564a8195a8588de7895c4c)](https://www.codacy.com/manual/rohitjain00/dev-portfolio-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rohitjain00/dev-portfolio-blog&amp;utm_campaign=Badge_Grade)
 
+## Home pagespeed
+
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&strat=desktop&showStratLabel=true)
+
+
+## Blog pagespeed
+
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&strat=desktop&showStratLabel=true)
+
+
+
 # dev-portfolio-blog
 
 This is a minimal jekyll theme for writing blogs and about yourself.
