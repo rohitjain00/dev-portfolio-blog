@@ -85,20 +85,28 @@ resume_url: 'Resume.pdf'
 author_name: [YOUR-NAME]
 ```
 
+
+4. In the `index.md` file add
+
+```yaml
+home_text : [some-text]
+```
+
+Replace "some-text" with your text
+
+5. Using Google Analytics add
+
+```yaml
+google_analytics: [google analytics Id]
+```
+
+
 ### Pagination
 
 Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
 
 Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml).
 
-
-1. In the `index.md` file add
-
-```yaml
-home_text : some-text
-```
-
-Replace "some-text" with your text
 
 ## Contributing
 
