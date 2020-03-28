@@ -89,3 +89,5 @@ jekyll-minifier:
   uglifier_args:                    # Default: (empty)
 
 ############################################################
+
+google_analytics: UA_123456789_1
