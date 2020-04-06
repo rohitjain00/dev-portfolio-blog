@@ -2,16 +2,18 @@
 layout: description
 title: Blog
 pagetype: blog
-pagination:
-  enabled: true
 ---
 <!-- This loops through the paginated posts -->
 <ul>
-    {% for post in paginator.posts %}
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <small>{{ post.date | date_to_string }}</small>
-        <p>{{ post.excerpt }}</p>
-    {% endfor %}
+    {% if paginator.total_posts == 0 %}
+        <p>No posts right now.</p>
+    {% else %}
+        {% for post in paginator.posts %}
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            <small>{{ post.date | date_to_string }}</small>
+            <p>{{ post.excerpt }}</p>
+        {% endfor %}
+    {% endif %}
 </ul>
 <hr>
 {% if paginator.total_pages > 1 %}

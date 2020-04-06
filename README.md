@@ -59,7 +59,9 @@ Or install it yourself as:
 
 ## Usage
 
-To start using the theme you need to create and edit some extra files in the root directory
+To start using the theme you need to follow these steps.
+
+Assuming that you started your first website based on `minima` theme from [here](https://jekyllrb.com/docs/)
 
 1. Create `blog.md` in the root folder ans set its yaml parameters to
 
@@ -76,25 +78,38 @@ layout: description
 permalink: /about/
 ```
 
-3. In the `_congif.yml` file add a key `resume_url` and set it to the path of the Resume. Also add `author_name` to your name to appear on the website.
-
-For example if the Resume is located in the root directory
+3. In the `index.md` file add
 
 ```yaml
-resume_url: 'Resume.pdf'
-author_name: [YOUR-NAME]
+home_text : [Your Text]
+```
+
+4. In the `_congif.yml` file add a key `resume_url` and set it to the path of the Resume. Also add `author_name` to your name to appear on the website.
+
+Path is relative to the root directory
+```yaml
+resume_url: [PATH_TO_RESUME]
+author_name: [YOUR_NAME]
 ```
 
 
-4. In the `index.md` file add
+5. In the `index.md` file add
 
+
+### Minifier
+
+Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and add this to your `_config.yml` file to enable minifier.
+
+##### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
+
+=======
 ```yaml
 home_text : [some-text]
 ```
 
 Replace "some-text" with your text
 
-5. Using Google Analytics add
+6. Using Google Analytics add
 
 ```yaml
 google_analytics: [google analytics Id]
@@ -110,7 +125,7 @@ Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/maste
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at <https://github.com/[USERNAME]/dev-portfolio-blog/.> This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/rohitjain00/dev-portfolio-blog/.> This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
