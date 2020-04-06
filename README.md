@@ -22,6 +22,10 @@
 
 This is a minimal jekyll theme for writing blogs and about yourself.
 
+## features
+ 1. Google Analytics
+ 2. Dark mode
+
 ## Desktop Preview
 
 ![Home Page](/screenshots/Home.png?raw=true "Home View of the website")
@@ -135,6 +139,8 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `dev-portfolio-blog.gemspec` accordingly.
+
+Read about the themes and how it's implememnted [here](https://github.com/rohitjain00/dev-portfolio-blog/wiki/Theme-Management)
 
 ## License
 
