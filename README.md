@@ -5,6 +5,19 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/rohitjain00/dev-portfolio-blog/badge)](https://www.codefactor.io/repository/github/rohitjain00/dev-portfolio-blog)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0b9f1c23f564a8195a8588de7895c4c)](https://www.codacy.com/manual/rohitjain00/dev-portfolio-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rohitjain00/dev-portfolio-blog&amp;utm_campaign=Badge_Grade)
 
+## Home pagespeed
+
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&strat=desktop&showStratLabel=true)
+
+
+## Blog pagespeed
+
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&strat=desktop&showStratLabel=true)
+
+
+
 # dev-portfolio-blog
 
 This is a minimal jekyll theme for writing blogs and about yourself.
@@ -79,9 +92,8 @@ resume_url: [PATH_TO_RESUME]
 author_name: [YOUR_NAME]
 ```
 
-### Pagination
 
-Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
+5. In the `index.md` file add
 
 
 ### Minifier
@@ -90,10 +102,30 @@ Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and ad
 
 ##### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
 
+=======
+```yaml
+home_text : [some-text]
+```
+
+Replace "some-text" with your text
+
+6. Using Google Analytics add
+
+```yaml
+google_analytics: [google analytics Id]
+```
+
+
+### Pagination
+
+Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
+
+Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml).
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at <https://github.com/[USERNAME]/dev-portfolio-blog/.> This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/rohitjain00/dev-portfolio-blog/.> This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
