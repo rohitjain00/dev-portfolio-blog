@@ -10,7 +10,10 @@
     {% seo %}
 
   </head>
-  <body>
-    {{ content }}
-  </body>
+    <body onload="onLoad()">
+      {% include themeSelector.html %}
+      {{ content }}
+      <script src="{{"/assets/js/theme.js" | relative_url }}"></script>
+      <script src="{{"/assets/js/script.js" | relative_url }}"></script>
+    </body>
 </html>
