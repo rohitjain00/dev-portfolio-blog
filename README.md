@@ -99,14 +99,6 @@ author_name: [YOUR_NAME]
 
 5. In the `index.md` file add
 
-
-### Minifier
-
-Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and add this to your `_config.yml` file to enable minifier.
-
-##### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
-
-=======
 ```yaml
 home_text : [some-text]
 ```
@@ -118,6 +110,13 @@ Replace "some-text" with your text
 ```yaml
 google_analytics: [google analytics Id]
 ```
+
+
+### Minifier
+
+Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and add this to your `_config.yml` file to enable minifier.
+
+##### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
 
 
 ### Pagination
