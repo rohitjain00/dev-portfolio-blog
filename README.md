@@ -7,14 +7,14 @@
 
 ## Home pagespeed
 
-![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&showStratLabel=true)
-![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com&strat=desktop&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=https://therohitjain.com&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=https://therohitjain.com&strat=desktop&showStratLabel=true)
 
 
 ## Blog pagespeed
 
-![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&showStratLabel=true)
-![GitHub PageSpeed](https://api.speedbadge.io/v1?url=therohitjain.com/blog&strat=desktop&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=https://therohitjain.com/blog&showStratLabel=true)
+![GitHub PageSpeed](https://api.speedbadge.io/v1?url=https://therohitjain.com/blog&strat=desktop&showStratLabel=true)
 
 
 
