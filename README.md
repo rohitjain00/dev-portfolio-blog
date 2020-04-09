@@ -25,6 +25,14 @@ This is a minimal jekyll theme for writing blogs and about yourself.
 ## features
  1. Google Analytics
  2. Dark mode
+ 3. Disqus comments
+ 4. Categorization
+ 5. Highly optimized blog 
+     #### PageSpeed Insights
+     * [Home](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com)[(therohitjain.com)](https://therohitjain.com)
+     * [Blog](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/blog/)[(therohitjain.com/blog/)](https://therohitjain.com/blog/)
+     * [About](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/about/)[(therohitjain.com/about/)](https://therohitjain.com/about/)
+
 
 ## Desktop Preview
 
@@ -94,46 +102,43 @@ home_text : [Your Text]
 
 Path is relative to the root directory
 ```yaml
-theme: dev-portfolio-blog
 resume_url: [PATH_TO_RESUME]
 author_name: [YOUR_NAME]
 description: [SITE_DESCRIPTION]
 url: [WEBSITE_URL]
 google_analytics: '[google analytics Id]'
 disqus:
-    shortname: discus-shotname
+    shortname: [discus-shotname]
 ```
 
 ### Minifier
 
 Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and add this to your `_config.yml` file to enable minifier.
 
-##### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
-
-
 ### Pagination
 
 Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
 
-Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml).
+### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
+
 
 ## Writing a new blog
 
 Create a new folder `_posts` in root folder
 
 1. Create a new markdown file in the format `yyyy-mm-dd-postname.md`
-2. Add yaml configuartion to the post
+2. Make sure that disqus's shortname is valid.
+3. Add yaml configuartion to the post
 
 ```yaml
 ---
 layout: post
-comments: true
+comments: [true | false]
 title: Hello World
+categories: [category1, category2]
 ---
 Post Text.
 ```
-
-(Change comments to false if you want to disable comments. Make sure discus's shortname is included in the config file.)
 
 
 ## Contributing
