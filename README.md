@@ -67,6 +67,8 @@ To start using the theme you need to follow these steps.
 
 Assuming that you started your first website based on `minima` theme from [here](https://jekyllrb.com/docs/)
 
+Add a `favicon.ico` to the root directory for favicon.
+
 1. Create `blog.md` in the root folder ans set its yaml parameters to
 
 ```yaml
@@ -88,32 +90,16 @@ permalink: /about/
 home_text : [Your Text]
 ```
 
-4. In the `_congif.yml` file add a key `resume_url` and set it to the path of the Resume. Also add `author_name` to your name to appear on the website.
+4. In the `_congif.yml` file add following and change accordingly
 
 Path is relative to the root directory
 ```yaml
+theme: dev-portfolio-blog
 resume_url: [PATH_TO_RESUME]
 author_name: [YOUR_NAME]
-```
-
-
-5. In the `index.md` file add
-
-```yaml
-home_text : [some-text]
-```
-
-Replace "some-text" with your text
-
-6. Using Google Analytics add
-
-```yaml
-google_analytics: [google analytics Id]
-```
-
-7. Using Disqus Comments
-
-```yaml
+description: [SITE_DESCRIPTION]
+url: [WEBSITE_URL]
+google_analytics: '[google analytics Id]'
 disqus:
     shortname: discus-shotname
 ```
