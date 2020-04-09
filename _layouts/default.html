@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}">
+    <script defer src="{{"/assets/js/theme.js" | relative_url }}"></script>
+    <script defer src="{{"/assets/js/script.js" | relative_url }}"></script>
     {% include analytics.html %}
     {% feed_meta %}
     {% seo %}
@@ -13,7 +15,5 @@
     <body onload="onLoad()">
       {% include themeSelector.html %}
       {{ content }}
-      <script src="{{"/assets/js/theme.js" | relative_url }}"></script>
-      <script src="{{"/assets/js/script.js" | relative_url }}"></script>
     </body>
 </html>
