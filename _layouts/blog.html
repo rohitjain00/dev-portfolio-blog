@@ -4,6 +4,11 @@ title: Blog
 pagetype: blog
 ---
 <!-- This loops through the paginated posts -->
+
+
+{% if paginator.total_posts == 0 %}
+    <p>No posts right now.</p>
+{% else %}
 <div>
     <br>
     <a href="{{ "/categories/" | relative_url }}">Categories</a> :
@@ -13,18 +18,16 @@ pagetype: blog
     {% endfor %}
 </div>
 <ul>
-    {% if paginator.total_posts == 0 %}
-        <p>No posts right now.</p>
-    {% else %}
-        {% for post in paginator.posts %}
-            <li>
-                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                <small>{{ post.date | date_to_string }}</small>
-                <p>{{ post.excerpt }}</p>
-            </li>
-        {% endfor %}
-    {% endif %}
+    {% for post in paginator.posts %}
+        <li>
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            <small>{{ post.date | date_to_string }}</small>
+            <p>{{ post.excerpt }}</p>
+        </li>
+    {% endfor %}
 </ul>
+{% endif %}
+
 <hr>
 {% if paginator.total_pages > 1 %}
 <ul>
