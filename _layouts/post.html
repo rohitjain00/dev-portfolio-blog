@@ -4,3 +4,8 @@ layout: description
 <h2>{{ page.title }}</h2>
 <small>{{ post.date | date_to_string }}</small>
 {{content}}
+
+{% if site.disqus.shortname and page.comments %}
+  <hr>
+  {% include disqus_comments.html %}
+{% endif %}

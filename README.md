@@ -111,6 +111,12 @@ Replace "some-text" with your text
 google_analytics: [google analytics Id]
 ```
 
+7. Using Disqus Comments
+
+```yaml
+disqus:
+    shortname: discus-shotname
+```
 
 ### Minifier
 
@@ -124,6 +130,24 @@ Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and ad
 Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
 
 Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml).
+
+## Writing a new blog
+
+Create a new folder `_posts` in root folder
+
+1. Create a new markdown file in the format `yyyy-mm-dd-postname.md`
+2. Add yaml configuartion to the post
+
+```yaml
+---
+layout: post
+comments: true
+title: Hello World
+---
+Post Text.
+```
+
+(Change comments to false if you want to disable comments. Make sure discus's shortname is included in the config file.)
 
 
 ## Contributing
