@@ -98,6 +98,11 @@ permalink: /about/
 home_text : [Your Text]
 ```
 
+4. Create a new `categories.md` file in root with following yaml parameters
+```yaml
+layout: categories
+```
+
 4. In the `_congif.yml` file add following and change accordingly
 
 Path is relative to the root directory
