@@ -1,6 +1,6 @@
 resume_url: 'Resume.pdf'
 author_name: 'John Doe'
-
+url:
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
 # The values here represent the defaults if nothing is set
@@ -90,7 +90,7 @@ jekyll-minifier:
 
 ############################################################
 
-google_analytics: UA_123456789_1
+google_analytics: 'UA_123456789_1'
 
 # Disqus Comments
 disqus:
