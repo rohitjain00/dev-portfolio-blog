@@ -1,17 +1,20 @@
 function onLoad() {
   var themeSelector = document.getElementById('themeSelector');
-  console.log('inside on load method');
   for (var themeName in themeMap) {
-    console.log('inside loop' + ' ' + themeName);
     var opt = document.createElement('option');
     opt.value = themeName;
     opt.innerHTML = capitalizeFirstLetter(themeName);
     themeSelector.appendChild(opt);
   }
+  if (localStorage.getItem('theme') != null) {
+    themeSelector.value = localStorage.getItem('theme');
+    toggleTheme();
+  }
 }
 
 function toggleTheme() {
   var themeName = themeSelector.value;
+  localStorage.setItem('theme', themeName);
   var element = document.getElementsByTagName('html')[0];
   changeTheme(element, themeMap[themeName]);
 }

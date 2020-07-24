@@ -25,6 +25,14 @@ This is a minimal jekyll theme for writing blogs and about yourself.
 ## features
  1. Google Analytics
  2. Dark mode
+ 3. Disqus comments
+ 4. Categorization
+ 5. Highly optimized blog 
+     #### PageSpeed Insights
+     * [Home](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com)[(therohitjain.com)](https://therohitjain.com)
+     * [Blog](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/blog/)[(therohitjain.com/blog/)](https://therohitjain.com/blog/)
+     * [About](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/about/)[(therohitjain.com/about/)](https://therohitjain.com/about/)
+
 
 ## Desktop Preview
 
@@ -67,6 +75,8 @@ To start using the theme you need to follow these steps.
 
 Assuming that you started your first website based on `minima` theme from [here](https://jekyllrb.com/docs/)
 
+Add a `favicon.ico` to the root directory for favicon.
+
 1. Create `blog.md` in the root folder ans set its yaml parameters to
 
 ```yaml
@@ -88,42 +98,52 @@ permalink: /about/
 home_text : [Your Text]
 ```
 
-4. In the `_congif.yml` file add a key `resume_url` and set it to the path of the Resume. Also add `author_name` to your name to appear on the website.
+4. Create a new `categories.md` file in root with following yaml parameters
+```yaml
+layout: categories
+```
+
+4. In the `_congif.yml` file add following and change accordingly
 
 Path is relative to the root directory
 ```yaml
 resume_url: [PATH_TO_RESUME]
 author_name: [YOUR_NAME]
+description: [SITE_DESCRIPTION]
+url: [WEBSITE_URL]
+google_analytics: '[google analytics Id]'
+disqus:
+    shortname: [discus-shotname]
 ```
-
-
-5. In the `index.md` file add
-
-```yaml
-home_text : [some-text]
-```
-
-Replace "some-text" with your text
-
-6. Using Google Analytics add
-
-```yaml
-google_analytics: [google analytics Id]
-```
-
 
 ### Minifier
 
 Visit [Jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) and add this to your `_config.yml` file to enable minifier.
 
-##### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
-
-
 ### Pagination
 
 Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration) and add this to your `_config.yml` file to enable pagination.
 
-Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml).
+### Check [_config.yml](https://github.com/rohitjain00/dev-portfolio-blog/blob/master/_config.yml) for example config file.
+
+
+## Writing a new blog
+
+Create a new folder `_posts` in root folder
+
+1. Create a new markdown file in the format `yyyy-mm-dd-postname.md`
+2. Make sure that disqus's shortname is valid.
+3. Add yaml configuartion to the post
+
+```yaml
+---
+layout: post
+comments: [true | false]
+title: Hello World
+categories: [category1, category2]
+---
+Post Text.
+```
 
 
 ## Contributing

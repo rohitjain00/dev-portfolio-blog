@@ -1,6 +1,6 @@
 resume_url: 'Resume.pdf'
 author_name: 'John Doe'
-
+url: johndoe.com
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
 # The values here represent the defaults if nothing is set
@@ -90,4 +90,57 @@ jekyll-minifier:
 
 ############################################################
 
-google_analytics: UA_123456789_1
+# _config.yml
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: false
+  gzip: false
+  defaults:
+    integrity:
+      {css,img,js}: false
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  # --
+  # Assets you wish to always have compiled.
+  #   This can also be combined with raw_precompile which
+  #   copies assets without running through the pipeline
+  #   making them ultra fast.
+  # --
+  precompile: []
+  raw_precompile: [
+    #
+  ]
+  # --
+  # baseurl: whether or not to append site.baseurl
+  # destination: the folder you store them in on the CDN.
+  # url: the CDN url (fqdn, or w/ identifier).
+  # --
+  cdn:
+    baseurl: false
+    destination: false
+    url: null
+  # --
+  # See lib/jekyll/assets/config.rb
+  #   for a list of defaults
+  # --
+  sources:
+    - _assets/custom
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+
+  autoprefixer:
+    browsers:
+    - "last 2 versions"
+    - "IE > 9"
+
+google_analytics: 'UA_123456789_1'
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: my_disqus_shortname

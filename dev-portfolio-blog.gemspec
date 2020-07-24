@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dev-portfolio-blog"
-  spec.version       = "0.1.4"
+  spec.version       = "0.1.5"
   spec.authors       = ["Rohit Jain"]
   spec.email         = ["rohitjain18005@gmail.com"]
 
@@ -20,6 +20,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-paginate-v2", "~> 1.9.4"
   spec.add_runtime_dependency "jekyll-minifier", "~> 0.1.10"
+  spec.add_runtime_dependency "jekyll-assets", "~> 3.0.12"
+  spec.add_runtime_dependency "autoprefixer-rails", "~> 9.7.5"
   spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "rake", "~> 12.0"
 end
