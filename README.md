@@ -71,7 +71,7 @@ Or install it yourself as:
 
 ## Usage
 
-To start using the theme you need to follow these steps.
+To start using the theme you need to follow these steps. Or simply fork my repo https://github.com/rohitjain00/rohitjain00.github.io and update the files.
 
 Assuming that you started your first website based on `minima` theme from [here](https://jekyllrb.com/docs/)
 
