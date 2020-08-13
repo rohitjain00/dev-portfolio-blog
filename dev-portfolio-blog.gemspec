@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dev-portfolio-blog"
-  spec.version       = "0.1.5"
+  spec.version       = "0.1.7"
   spec.authors       = ["Rohit Jain"]
   spec.email         = ["rohitjain18005@gmail.com"]
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     f.match(%r!^(blog|assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "jekyll"
+  spec.add_runtime_dependency "jekyll", "~>3.8.7"
   spec.add_runtime_dependency "jekyll-seo-tag"
   spec.add_runtime_dependency "jekyll-feed"
   spec.add_runtime_dependency "jekyll-sitemap"
