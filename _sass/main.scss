@@ -116,9 +116,10 @@ body {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: end;
+            justify-content: flex-end;
             align-items: center;
             flex-grow: 5;
+            padding-inline-start: 0;
             li {
                 padding: 0 20px;
                 list-style-type: none;
