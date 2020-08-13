@@ -14,14 +14,15 @@ Gem::Specification.new do |spec|
     f.match(%r!^(blog|assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 3.8"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.13.0"
-  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
-  spec.add_runtime_dependency "jekyll-paginate-v2", "~> 1.9.4"
-  spec.add_runtime_dependency "jekyll-minifier", "~> 0.1.10"
-  spec.add_runtime_dependency "jekyll-assets", "~> 3.0.12"
-  spec.add_runtime_dependency "autoprefixer-rails", "~> 9.7.5"
-  spec.add_development_dependency "bundler", "~> 2.1.4"
-  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_runtime_dependency "jekyll"
+  spec.add_runtime_dependency "jekyll-seo-tag"
+  spec.add_runtime_dependency "jekyll-feed"
+  spec.add_runtime_dependency "jekyll-sitemap"
+  spec.add_runtime_dependency "jekyll-paginate-v2"
+  spec.add_runtime_dependency "jekyll-minifier"
+  spec.add_runtime_dependency "jekyll-assets"
+  spec.add_runtime_dependency "sprockets", "~> 3.7"
+  spec.add_runtime_dependency "autoprefixer-rails"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
 end
