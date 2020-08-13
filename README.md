@@ -1,5 +1,3 @@
-**Please note that v0.1.5 is experiencing some dependency issues. Use v0.1.4 for now**
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  [![Gem Version](https://badge.fury.io/rb/dev-portfolio-blog.svg)](https://badge.fury.io/rb/dev-portfolio-blog)
 ![](https://ruby-gem-downloads-badge.herokuapp.com/dev-portfolio-blog)
