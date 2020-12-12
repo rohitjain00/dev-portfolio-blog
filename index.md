@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text: Text
+home_text: Hey, I think you stole my dog - John Wick
 title: Rohit Jain
 ---
