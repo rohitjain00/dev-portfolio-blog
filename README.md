@@ -71,8 +71,12 @@ Or install it yourself as:
 
 ## Usage
 
-To start using the theme you need to follow these steps. Or simply fork my repo https://github.com/rohitjain00/rohitjain00.github.io and update the files.
+To start using the theme you either follow these steps or simply fork my repo https://github.com/rohitjain00/rohitjain00.github.io and update the files.
 
+### Clone the branch `cloneAndUse`[here](https://github.com/rohitjain00/dev-portfolio-blog/tree/cloneAndUse) and change the theme accordingly.
+
+
+### Starting from the beginning:
 Assuming that you started your first website based on `minima` theme from [here](https://jekyllrb.com/docs/)
 
 1. Add a `favicon.ico` to the root directory for favicon.
@@ -81,8 +85,10 @@ Assuming that you started your first website based on `minima` theme from [here]
 
 ```yaml
 layout: blog
-title: Blog
 permalink: /blog/
+title: [Blog Page Title]
+pagination:
+  enabled: true
 ```
 
 3. Change your `about.md` yaml parameters to following
@@ -96,7 +102,9 @@ title: About
 3. In the `index.md` file add
 
 ```yaml
-home_text : [Your Text]
+layout: home
+home_text: Text
+title: [Home Page Title]
 ```
 
 4. Create a new `categories.md` file in root with following yaml parameters
