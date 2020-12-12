@@ -81,8 +81,10 @@ Assuming that you started your first website based on `minima` theme from [here]
 
 ```yaml
 layout: blog
-title: Blog
 permalink: /blog/
+title: [Blog Page Title]
+pagination:
+  enabled: true
 ```
 
 3. Change your `about.md` yaml parameters to following
@@ -96,7 +98,9 @@ title: About
 3. In the `index.md` file add
 
 ```yaml
-home_text : [Your Text]
+layout: home
+home_text: Text
+title: [Home Page Title]
 ```
 
 4. Create a new `categories.md` file in root with following yaml parameters
