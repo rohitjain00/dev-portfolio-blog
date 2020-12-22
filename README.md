@@ -176,3 +176,6 @@ To add a custom directory to your theme-gem, please edit the regexp in `dev-port
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+If you like my work, you can buy me a coffee here :smile:
+
+<a href="https://www.buymeacoffee.com/rohitjain00" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
