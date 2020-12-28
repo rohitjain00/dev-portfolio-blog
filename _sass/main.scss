@@ -12,6 +12,7 @@
 html {
   --primary-background-color: white;
   --primary-text-color: #222;
+  --primary-highlight-color: #eeeeee;
   padding: 0;
   margin: 0;
 }
@@ -208,4 +209,14 @@ body {
       margin-left: 0;
     }
   }
+}
+
+
+//custom md tags styles
+div.highlight {
+  background: var(--primary-highlight-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  overflow: auto;
 }
