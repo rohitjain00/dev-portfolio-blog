@@ -22,6 +22,7 @@ function toggleTheme() {
 function changeTheme(element, theme) {
   element.style.setProperty("--primary-background-color", theme['background-color']);
   element.style.setProperty("--primary-text-color", theme['text-color']);
+  element.style.setProperty("--primary-highlight-color", theme['highlight-color']);
 }
 
 function capitalizeFirstLetter(string) {
