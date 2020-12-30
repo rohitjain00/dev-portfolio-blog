@@ -27,7 +27,8 @@ This is a minimal jekyll theme for writing blogs and about yourself.
  2. Dark mode
  3. Disqus comments
  4. Categorization
- 5. Highly optimized blog
+ 5. Emojis Support
+ 6. Highly optimized blog
      #### PageSpeed Insights
      * [Home](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com)[(therohitjain.com)](https://therohitjain.com)
      * [Blog](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Ftherohitjain.com/blog/)[(therohitjain.com/blog/)](https://therohitjain.com/blog/)
