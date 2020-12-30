@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-assets"
   spec.add_runtime_dependency "sprockets", "~> 3.7"
   spec.add_runtime_dependency "autoprefixer-rails"
+  spec.add_runtime_dependency "jemoji"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
 end
