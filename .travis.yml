@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+- 2.6.5
+
+before_install:
+- chmod +x scripts/testBuild.sh
+
+install: gem install dev-portfolio-blog
+script: jekyll build
