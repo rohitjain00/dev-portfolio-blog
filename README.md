@@ -74,7 +74,10 @@ Or install it yourself as:
 
 To start using the theme you either follow these steps or simply fork my repo https://github.com/rohitjain00/rohitjain00.github.io and update the files.
 
-### Clone the branch `cloneAndUse`[here](https://github.com/rohitjain00/dev-portfolio-blog/tree/cloneAndUse) and change the theme accordingly.
+### Recommended
+ Please use the theme as the plugin so that all the latest updated for this theme comes directly in your website.
+
+#### Clone the branch `master` and change the theme accordingly.
 
 
 ### Starting from the beginning:
