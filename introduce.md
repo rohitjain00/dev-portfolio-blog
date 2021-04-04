@@ -1,5 +1,5 @@
 ---
-layout: introduce
+layout:  description
 permalink: /introduce/
 title: 자기소개
 ---
