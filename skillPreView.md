@@ -1,7 +1,7 @@
 ---
 layout: description
 title: About
-permalink: /blog/
+permalink: //
 ---
 # QUICK VIEW
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript
