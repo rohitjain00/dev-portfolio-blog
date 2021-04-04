@@ -1,6 +1,6 @@
 resume_url: "Resume.pdf"
 author_name: "김이택 "
-url: johndoe.com
+url: goldepond.github.io
 
 plugins:
   - jekyll-seo-tag
