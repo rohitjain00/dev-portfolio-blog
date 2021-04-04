@@ -1,7 +1,7 @@
 ---
 layout: description
-title: 
-permalink: //
+title: /asd/
+permalink: /asd/
 ---
 # QUICK VIEW
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript
