@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text: 그래 씨발 나도 개발자다  - 김이택
+home_text: 기술 개발 정리 블로그  - 김이택
 title: [김이택]
 ---
