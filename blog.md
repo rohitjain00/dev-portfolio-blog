@@ -1,7 +1,7 @@
 ---
 layout: blog
 permalink: /blog/
-title: 김이 택 블로그탭 | Blog
+title: 김이택 기술개발 정리 블로그 | Blog
 pagination:
   enabled: true
 ---
