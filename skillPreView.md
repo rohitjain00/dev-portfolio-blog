@@ -1,7 +1,7 @@
 ---
 layout: description
-title: /introduce/
-permalink: /introduce/
+title: //
+permalink: //
 ---
 # QUICK VIEW
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript
