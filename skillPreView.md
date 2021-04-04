@@ -1,6 +1,6 @@
 ---
 layout: description
-title: About
+title: 
 permalink: //
 ---
 # QUICK VIEW
