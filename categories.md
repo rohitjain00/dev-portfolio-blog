@@ -1,5 +1,5 @@
 ---
-layout: categories카테고리
-permalink: /categories 카테고리/
+layout: categories
+permalink: /categories/
 title: 카테고리
 ---
