@@ -1,7 +1,7 @@
 ---
 layout: description
-title: //
-permalink: //
+title: /sdfsd/
+permalink: /sdfsd/
 ---
 # QUICK VIEW
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript
