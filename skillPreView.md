@@ -1,7 +1,7 @@
 ---
 layout: description
 title: About
-permalink: /about123/
+permalink: /about/
 ---
 # QUICK VIEW
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript
