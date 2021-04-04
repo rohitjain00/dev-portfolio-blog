@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text: Hey, I think you stole my dog - John Wick
-title: Rohit Jain
+home_text: 그래내가 개발자다 - 김택
+title: 김 이택
 ---
