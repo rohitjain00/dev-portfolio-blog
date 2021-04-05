@@ -3,7 +3,27 @@ layout: description
 title: About
 permalink: /about/
 ---
-어바웃 타임이나 보고 싶다
+
+
+## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript 
+## Java
+*   This is an unordered list following a header.
+## C#
+*   This is an unordered list following a header.
+## OracleDB
+*   This is an unordered list following a header.
+## Git/Github
+*   This is an unordered list following a header.
+## HTML/CSS
+*   This is an unordered list following a header.
+## UNITY
+*   This is an unordered list following a header.
+## C
+*   This is an unordered list following a header.
+## JavaScript
+*   This is an unordered list following a header.
+*   
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
