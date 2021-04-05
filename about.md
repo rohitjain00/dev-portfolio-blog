@@ -10,12 +10,17 @@ permalink: /about/
 *   This is an unordered list following a header.
 ## C#
 *   This is an unordered list following a header.
-## OracleDB
-*   This is an unordered list following a header.
+## OracleDB/SQL
+*   SQL을 사용하여 OracleDB를 능숙하게 사용할 수 있습니다.
+*   데이터베이스를 최적화하여 관리할 수 있습니다.
+
 ## Git/Github
-*   This is an unordered list following a header.
+*   깃과 깃헙을 익숙하게 사용하여 다른 개발자들과 협업을 할 수 있습니다.
+*   깃 리베이스를 할 수 있으며 스쿼시를 통해 커밋을 깔끔하게 관리할 수 있습니다
+*   git flow가 무엇인지 알고 있으며 왜 사용해야 하는지 이해하고 있습니다.
+
 ## HTML/CSS
-*   This is an unordered list following a header.
+*   원하는 UI를 익숙하게 만들어 낼 수 있습니다
 ## UNITY
 *   This is an unordered list following a header.
 ## C
