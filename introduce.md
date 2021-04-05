@@ -8,21 +8,4 @@ permalink: /introduce/
 ### 새로운 기술에 관심이 많으며, 여러 사람과의 협업을 통한 긍정적 발전을 좋아합니다.
 ## 그렇습니다
 
-## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript 
-## Java
-*   This is an unordered list following a header.
-## C#
-*   This is an unordered list following a header.
-## OracleDB
-*   This is an unordered list following a header.
-## Git/Github
-*   This is an unordered list following a header.
-## HTML/CSS
-*   This is an unordered list following a header.
-## UNITY
-*   This is an unordered list following a header.
-## C
-*   This is an unordered list following a header.
-## JavaScript
-*   This is an unordered list following a header.
 *   
