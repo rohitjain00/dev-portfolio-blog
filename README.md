@@ -118,7 +118,7 @@ permalink: /categories/
 title: Categories
 ```
 
-4. In the `_congif.yml` file add following and change accordingly
+4. In the `_config.yml` file add following and change accordingly
 
 Path is relative to the root directory
 ```yaml
