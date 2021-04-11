@@ -4,7 +4,7 @@ comments: true
 title: UnityGame
 categories: [C#,Unity]
 ---
-### 유니티 게임 RunRunRun
+# 유니티 게임 RunRunRun
 
 ## Description
 *  쿠키런 형식의 달리고 뛰면서 더 높은 점수를 얻는 방법의 게임입니다.
@@ -14,4 +14,3 @@ categories: [C#,Unity]
 
 ![GameMenu](https://user-images.githubusercontent.com/37152976/114311137-88bcbe00-9b28-11eb-9888-2a2f2b13d997.gif)
 
-![Branching](/_image/GameMenu.gif)
