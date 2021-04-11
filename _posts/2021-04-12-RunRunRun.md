@@ -13,7 +13,7 @@ categories: [C#,Unity]
 
 ## Related Sources
 
-[RunRunRun깃허브_페이지](https://github.com/goldepond/RunBoyRun).
+[RunRunRun깃허브](https://github.com/goldepond/RunBoyRun).
 <br/>
 <br/>
 <br/><br/><br/>
