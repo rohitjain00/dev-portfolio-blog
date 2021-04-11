@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: UnityGame
-categories: [ C#, Unity]
+categories: [C#,Unity]
 ---
 ### 유니티 게임 RunRunRun
 
