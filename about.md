@@ -5,10 +5,13 @@ permalink: /about/
 ---
 
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript 
+
 ## Java
 *   This is an unordered list following a header.
+
 ## C#
 *   This is an unordered list following a header.
+
 ## OracleDB/SQL
 *   SQL을 사용하여 OracleDB를 능숙하게 사용할 수 있습니다.
 *   데이터베이스를 최적화하여 관리할 수 있습니다.
@@ -20,13 +23,18 @@ permalink: /about/
 
 ## HTML/CSS
 *   원하는 UI를 익숙하게 만들어 낼 수 있습니다
+
 ## UNITY
 *   This is an unordered list following a header.
+
 ## C
 *   This is an unordered list following a header.
+
 ## JavaScript
 *   This is an unordered list following a header.
-*   
+
+<br/>
+====================================================================================================
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
