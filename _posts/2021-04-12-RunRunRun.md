@@ -10,10 +10,11 @@ categories: [C#,Unity]
 *  쿠키런 형식의 달리고 뛰면서 더 높은 점수를 얻는 방법의 게임입니다.
 *  c#으로 제작되었으며, 유저 정보는 Json파일로 저장하였습니다.
 *  1인 개발 게임입니다.
-<br/>
-<br/>
 
+<br/>
 [RunRunRun깃허브_페이지](https://github.com/goldepond/RunBoyRun).
+<br/>
+<br/>
 <br/><br/><br/>
 
 ![GameMenu](https://user-images.githubusercontent.com/37152976/114313345-1f8d7880-9b31-11eb-88f8-a8ac03d53e0d.gif)
