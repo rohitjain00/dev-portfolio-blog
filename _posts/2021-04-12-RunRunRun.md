@@ -12,8 +12,9 @@ categories: [C#,Unity]
 *  1인 개발 게임입니다.
 <br/>
 <br/>
+[RunRunRun깃허브_링크](https://github.com/goldepond/RunBoyRun).
 <br/><br/><br/>
-  
+
 ![GameMenu](https://user-images.githubusercontent.com/37152976/114313345-1f8d7880-9b31-11eb-88f8-a8ac03d53e0d.gif)
 <br/><br/>
 *  4개의 캐릭터, 4개의 스타팅파워, 9개의 능력, 9개의 아이템으로 유저 경험을 다각화시켰습니다.
