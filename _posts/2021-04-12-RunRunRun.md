@@ -13,4 +13,4 @@ categories: [C#,Unity]
 *  1인 개발 게임입니다.
 
 
-![Branching](_image/GameMenu.gif)
+![Branching](goldepond.github.io_image/GameMenu.gif)
