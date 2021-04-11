@@ -3,7 +3,6 @@ layout: description
 title: About
 permalink: /about/
 ---
-![Branching](_image/GameMenu.gif)
 
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript 
 ## Java
