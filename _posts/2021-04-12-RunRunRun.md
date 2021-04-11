@@ -12,7 +12,7 @@ categories: [C#,Unity]
 *  1인 개발 게임입니다.
 <br/>
 <br/>
-[RunRunRun깃허브_링크](https://github.com/goldepond/RunBoyRun).
+[Link to another page](https://github.com/goldepond/RunBoyRun).
 <br/><br/><br/>
 
 ![GameMenu](https://user-images.githubusercontent.com/37152976/114313345-1f8d7880-9b31-11eb-88f8-a8ac03d53e0d.gif)
