@@ -3,7 +3,7 @@ layout: description
 title: About
 permalink: /about/
 ---
-![Branching](https://github.com/goldepond/goldepond.github.io/_image/GameMenu.gif)
+![Branching](_image/GameMenu.gif)
 
 ## Java ,C# ,OracleDB ,Git/Github, HTML/CSS, UNITY, C, JavaScript 
 ## Java
