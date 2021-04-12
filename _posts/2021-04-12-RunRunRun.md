@@ -28,4 +28,17 @@ categories: [C#,Unity]
 *  각 스테이지마다 다른 아이템이 등장하며 아이템 탭에서는 이런 아이템의 효과를 증가시킬 수 있습니다.
    
    
-   asvsd
+![GameScene1](https://user-images.githubusercontent.com/37152976/114377965-329c5900-9bc2-11eb-8d93-76663f502447.gif)
+
+* 매뉴는 뭐가 있고
+
+![GameScene2](https://user-images.githubusercontent.com/37152976/114378064-4942b000-9bc2-11eb-8c65-d3beb8d3e54d.gif)
+
+* 다양한 스테이지를 개발했으며 
+
+![GameScene3](https://user-images.githubusercontent.com/37152976/114378108-5790cc00-9bc2-11eb-85d4-9a29240a65d7.gif)
+
+
+* 환경설정또한 구현하였다.
+
+
