@@ -42,6 +42,8 @@ categories: [C#,Unity]
 ![GameScene2](https://user-images.githubusercontent.com/37152976/114378064-4942b000-9bc2-11eb-8c65-d3beb8d3e54d.gif)
 
 * 6단계의 다양한 스테이지를 개발했으며, 각 스테이지마다 테마와 발판 방식이 달라집니다. 
+* 스테이지에 따라 조금씩 다른 열매가 등장합니다.
+* 해당 영상에서는 잠시동안 Jump 수치를 100으로 고정시켜, 잠시동안 무한 공중점프를 할 수있는 열매를 먹은 장면입니다.
 
 ![GameScene3](https://user-images.githubusercontent.com/37152976/114378108-5790cc00-9bc2-11eb-85d4-9a29240a65d7.gif)
 
