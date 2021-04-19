@@ -52,3 +52,9 @@ categories: [C#,Unity]
 * Copyright에는 해당 게임에 사용한 무료 사운드 출처를 집어 넣었습니다.
 
 
+![Start](https://user-images.githubusercontent.com/37152976/115267226-e6c65280-a173-11eb-9273-a52e032e171c.png)
+
+* 구글 출시 화면
+
+
+
