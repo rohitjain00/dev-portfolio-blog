@@ -8,7 +8,7 @@ categories: [C#,Unity]
 
 ## Description
 *  쿠키런 형식의 달리고 뛰면서 더 높은 점수를 얻는 게임입니다.
-*  유니티 엔진을 사용한 c#으로 제작되었으며, 유저 정보는 Json파일로 저장하였습니다.
+*  유니티 엔진을 사용한 c#으로 제작되었습니다.
 *  1인 개발 게임입니다.
 
 ## Related Sources
@@ -17,7 +17,7 @@ categories: [C#,Unity]
 <br/>
 <br/>
 
-## Explane
+## 1 게임 소개
 <br/>
 
 ![GameMenu](https://user-images.githubusercontent.com/37152976/114313345-1f8d7880-9b31-11eb-88f8-a8ac03d53e0d.gif)
@@ -55,6 +55,12 @@ categories: [C#,Unity]
 ![Start](https://user-images.githubusercontent.com/37152976/115267226-e6c65280-a173-11eb-9273-a52e032e171c.png)
 
 * 구글 출시 화면
+
+
+## 2 프로젝트 구조
+   별도의 서버없이 유저 정보와 게임의 기본적인 데이터 파일을 json파일로 기기내에 저장하여 사용하고 있습니다.
+   몬스터와 발판은 미리 n개의 최대 수용량을 만들어 둔 뒤, 
+   
 
 
 
