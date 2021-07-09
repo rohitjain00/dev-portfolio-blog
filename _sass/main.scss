@@ -157,6 +157,55 @@ body {
     }
     a {
       color: var(--primary-text-color);
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 2px solid  var(--primary-text-color);
+        h1 {
+            // align-self: flex-start;
+            font-size: 40px;
+            flex-grow: 2;
+            text-align: left;
+            margin: 10px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            flex-grow: 5;
+            padding-inline-start: 0;
+            li {
+                padding: 0 20px;
+                list-style-type: none;
+                a {
+                    text-decoration : none;
+                    color: var(--primary-text-color);
+                    &:hover {
+                        border-bottom: 2px solid var(--primary-text-color);
+                        color: var(--primary-text-color);
+                    }
+                }
+                @include mediaQuery(phone-width) {
+                    text-align: center;
+                    padding: 0 10px;
+                }
+            }
+        }
+        @include mediaQuery(tablet-width) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ul {
+                justify-content: center;
+            }
+            h1 {
+                text-align: center;
+            }
+        }
     }
   }
 }
