@@ -5,6 +5,7 @@ layout: description
 <small>{{ post.date | date_to_string }}</small>
 {{content}}
 
+<div class="post-footer">
 <div class="post-categories">
   Categories :
   {% if post %}
@@ -17,7 +18,9 @@ layout: description
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>
+<div>{% include share_buttons.html %}</div>
 
+</div>
 {% if site.disqus.shortname and page.comments %}
   <hr>
   {% include disqus_comments.html %}

@@ -170,9 +170,12 @@ body {
   border-radius: 5px;
   border: 0;
 }
-
-.post-categories {
-  text-align: right;
+.post-footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 .blog-list {
   list-style: none;
