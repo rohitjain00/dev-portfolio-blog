@@ -162,6 +162,10 @@ categories: [category1, category2]
 Post Text.
 ```
 
+## Troubleshooting
+- ` Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes`
+   Node JS is missing from your system. In ubuntu install using `sudo apt-get install nodejs` or refer to [this](https://stackoverflow.com/questions/9202324/execjs-could-not-find-a-javascript-runtime-but-execjs-and-therubyracer-are-in)
+
 
 ## Contributing
 
