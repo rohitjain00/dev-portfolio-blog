@@ -261,11 +261,12 @@ body {
 }
 
 
-//custom md tags styles
-div.highlight {
-  background: var(--primary-highlight-color);
-  padding: 5px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  overflow: auto;
+  //custom md tags styles
+  div.highlight {
+    background: var(--primary-highlight-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    overflow: auto;
+  }
 }
