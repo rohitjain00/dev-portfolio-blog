@@ -20,5 +20,6 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
+          jekyll_baseurl: 'dev-portfolio-blog'
           pre_build_commands: pacman -S --noconfirm nodejs npm
           branch: 'sample-site'
