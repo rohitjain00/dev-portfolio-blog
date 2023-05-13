@@ -1,0 +1,1 @@
+Sitemap: johndoe.com/dev-portfolio-blog/sitemap.xml
