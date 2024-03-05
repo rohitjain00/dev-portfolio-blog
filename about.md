@@ -12,10 +12,13 @@ checkout my projects @
 </p>
 
 # Skills:
+## Language:
+Java, Javascript, HTML, CSS, Oracle, 
+## Tools:
+eclipce, Apache Tomcat, Spring Framework, DBeaver, VScode, GitHub, java servlet
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-## Projects:
+# Projects:
 
 > This is a blockquote following a header.
 >
