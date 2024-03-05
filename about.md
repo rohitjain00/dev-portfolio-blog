@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+안녕하세요.
+느리지만, 책임감 있는 신입 개발자
+나재윤입니다.
 
 [Link to another page](./another-page.html).
 
