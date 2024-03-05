@@ -14,10 +14,10 @@ checkout my projects @
 # Skills:
 <p>
 <strong> Language: </strong>
-Java, Javascript, HTML, CSS, Oracle<br>
+Java, Javascript, HTML, CSS, Oracle</p>
+<p>
 <strong> Tools: </strong>
 eclipce, Apache Tomcat, Spring Framework, DBeaver, VScode, GitHub, java servlet
-
 </p>
 # Projects:
 
