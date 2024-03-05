@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-안녕하세요..
-느리지만, 책임감 있는 신입 개발자
-나재윤입니다.
+<p>느리지만, 책임감 있는 신입 개발자 나재윤입니다.</p>
 
 [Link to another page](./another-page.html).
 
