@@ -15,7 +15,7 @@ checkout my projects @
 <p>
 <strong> Language: </strong>
 Java, Javascript, HTML, CSS, Oracle, 
-## Tools:
+<strong> Tools: </strong>
 eclipce, Apache Tomcat, Spring Framework, DBeaver, VScode, GitHub, java servlet
 
 </p>
