@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text: Think you for comming my page
+home_text: Thank you For Comming My page
 title: new dev_Jaeyun
 ---
