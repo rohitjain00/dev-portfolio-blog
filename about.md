@@ -14,7 +14,7 @@ checkout my projects @
 # Skills:
 <p>
 <strong> Language: </strong>
-Java, Javascript, HTML, CSS, Oracle, 
+Java, Javascript, HTML, CSS, Oracle<br>
 <strong> Tools: </strong>
 eclipce, Apache Tomcat, Spring Framework, DBeaver, VScode, GitHub, java servlet
 
