@@ -12,12 +12,13 @@ checkout my projects @
 </p>
 
 # Skills:
-## Language:
+<p>
+<strong> Language: </strong>
 Java, Javascript, HTML, CSS, Oracle, 
 ## Tools:
 eclipce, Apache Tomcat, Spring Framework, DBeaver, VScode, GitHub, java servlet
 
-
+</p>
 # Projects:
 
 > This is a blockquote following a header.
