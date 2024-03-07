@@ -25,7 +25,7 @@ VScode, GitHub, java servlet
 ## Projects:
 
   * **펀딩 사이트[펀딩 파이브]:**
-  <a href="https://github.com/smdyuq/FundingFive.git">Github</a>
+  <a href="https://github.com/smdyuq/FundingFive/tree/jaeyun">Github</a>
 <a href="https://url.kr/5j2c1u">PPT</a>
   >판매자의 기회,아이디어를 구매자가 지원하는 시스템 구조가 [세상에 없던 아이디어를 구현한다]라는 것이 저희 팀명 [F5]의 기능적 의미 새로고침 그리고 코딩의 목적과 일치하다고 생각하여 기획하게 되었습니다.
 
