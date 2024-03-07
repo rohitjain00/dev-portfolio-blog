@@ -46,12 +46,13 @@ VScode, GitHub, java servlet
 
 
 ## EDUCATION:
-|       교육 기간      |       교육명      | 교육기관 |
-|:--------------------|:------------------|:--------|
-| 23년 9월 ~ 24년 3월  | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+<div class="sm:col-span-4 mt-4 md:mt-0">
+  <p>
+    <a href="https://www.facebook.com/groups/1129292383932010/permalink/1239784209549493/" target="_blank" rel="noopener noreferrer" class="underline">퀵랩 뽀개기 핸즈온 세미나</a>
+  </p>
+  <p>GCP, Qwiklabs을 통해 서버 생성, 관리, 로드 밸런싱 등의 실습을 진행하였습니다.</p>
+</div>
+
 
 ### Header 3
 
