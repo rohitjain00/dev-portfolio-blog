@@ -46,11 +46,18 @@ VScode, GitHub, java servlet
 
 
 ## EDUCATION:
-<div class="sm:col-span-4 mt-4 md:mt-0">
-  <p>
-    <a href="https://www.facebook.com/groups/1129292383932010/permalink/1239784209549493/" target="_blank" rel="noopener noreferrer" class="underline">퀵랩 뽀개기 핸즈온 세미나</a>
-  </p>
-  <p>GCP, Qwiklabs을 통해 서버 생성, 관리, 로드 밸런싱 등의 실습을 진행하였습니다.</p>
+<div class="py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6">
+  <div>
+    <p class="text-sm font-large text-gray-500"></p>
+    <p class="font-bold">2020.01.17</p>
+    <p class="text-sm font-large text-gray-500">listener</p>
+  </div>
+  <div class="sm:col-span-4 mt-4 md:mt-0">
+    <p>
+      <a href="https://www.facebook.com/groups/1129292383932010/permalink/1239784209549493/" target="_blank" rel="noopener noreferrer" class="underline">퀵랩 뽀개기 핸즈온 세미나</a>
+    </p>
+    <p>GCP, Qwiklabs을 통해 서버 생성, 관리, 로드 밸런싱 등의 실습을 진행하였습니다.</p>
+  </div>
 </div>
 
 
