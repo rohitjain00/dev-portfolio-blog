@@ -46,19 +46,9 @@ VScode, GitHub, java servlet
 
 
 ## EDUCATION:
-<div class="py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6">
-  <div>
-    <p class="text-sm font-large text-gray-500"></p>
-    <p class="font-bold">2020.01.17</p>
-    <p class="text-sm font-large text-gray-500">listener</p>
-  </div>
-  <div class="sm:col-span-4 mt-4 md:mt-0">
-    <p>
-      <a href="https://www.facebook.com/groups/1129292383932010/permalink/1239784209549493/" target="_blank" rel="noopener noreferrer" class="underline">퀵랩 뽀개기 핸즈온 세미나</a>
-    </p>
-    <p>GCP, Qwiklabs을 통해 서버 생성, 관리, 로드 밸런싱 등의 실습을 진행하였습니다.</p>
-  </div>
-</div>
+- JAVA기반 풀스택(Spring, Vue)웹 개발자 실무 양성과정 @그린컴퓨터 아트학원(안양) - (23년 09월 ~ 24년 02월)
+- (NCS)컴퓨터 응용 설계 @더조은컴퓨터아트학원(안양) - (17년 05월 ~ 17년 7월)
+- 스펙초월 이경일 모바일 게임 멘토 스쿨 @고용노동부, 한국인력공단 - (14년 04월 ~ 14년 08월)
 
 
 ### Header 3
