@@ -5,7 +5,7 @@ permalink: /about/
 ---
 <p>
 <div class=pull-right>
-![Octocat](https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506)
+https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506.jsp
 </div>
 <div class=pull-left>
 느리지만, 책임감 있는 신입 개발자 나재윤입니다.<br>
