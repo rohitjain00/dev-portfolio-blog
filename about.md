@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-    <div style="float: right">
-        <img src="https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506" />
-    </div>
-
-
-
 <p>
 <!-- <div class=pull-right>
 ![Octocat](https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506)
