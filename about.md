@@ -3,7 +3,7 @@ layout: description
 title: About
 permalink: /about/
 ---
-
+<p>
 <div class=pull-right>
 ![Octocat](https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506)
 </div>
@@ -12,7 +12,7 @@ permalink: /about/
 저는 문제를 해결하기 위해 끈질기게 노력하는 사람입니다.<br> 
 복잡한 물류 문제를 2달간의 끈질긴 추적으로 해결한 경험이 있습니다. 이를 통해 어떠한 상황에서도 문제 해결을 위해 꾸준히 노력한다는 점을 보여드릴 수 있습니다. 또한, 학습 프로그램 운영 중 중요한 업무를 휴가 중에도 놓치지 않고 처리한 경험으로부터 책임감을 갖고 일하는 습관을 가진 사람임을 알려드립니다. 마지막으로, 동료와의 관계를 중요시하는 성격으로 인해 다양한 사람들과 원활하게 소통하며 일할 수 있는 팀플레이어임을 자부합니다.
 </div>
-
+</p>
 
 <p>느리지만, 책임감 있는 신입 개발자 나재윤입니다.</p>![Octocat](https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506)
 <p>저는 문제를 해결하기 위해 끈질기게 노력하는 사람입니다.<br> 
