@@ -18,14 +18,13 @@ checkout my projects @
 ## ⚒️Skills:
 
  **📚Language:** 
-> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"><img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=Oracle&logoColor=white"><img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"><img src="https://img.shields.io/badge/JAVA-4682B4?style=flat&logo=JAVA&logoColor=white"><img src="https://img.shields.io/badge/Ajax-D3D3D3?style=flat&logo=Ajax&logoColor=white">Java, Javascript, HTML, CSS, SQL, 
+> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"><img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=Oracle&logoColor=white"><img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"><img src="https://img.shields.io/badge/JAVA-4682B4?style=flat&logo=JAVA&logoColor=white"><img src="https://img.shields.io/badge/Ajax-D3D3D3?style=flat&logo=Ajax&logoColor=white">
 
  **⚙️Tools:**
-><img src="https://img.shields.io/badge/Eclipse%20IDE-2C2255?style=flat&logo=Eclipse%20IDE&logoColor=white"><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=Visual%20Studio%20Code&logoColor=white"><img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=Apache%20Tomcat&logoColor=white"><img src="https://img.shields.io/badge/Mybatis-000000?style=flat&logo=Mybatis&logoColor=white"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"><img src="https://img.shields.io/badge/spring-6DB33F?style=flat&logo=Spring&logoColor=white"><img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white">    Oracle, eclipce, Apache Tomcat, Spring Framework, DBeaver, jQuery,
-VScode, GitHub, java servlet
+><img src="https://img.shields.io/badge/Eclipse%20IDE-2C2255?style=flat&logo=Eclipse%20IDE&logoColor=white"><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=Visual%20Studio%20Code&logoColor=white"><img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=Apache%20Tomcat&logoColor=white"><img src="https://img.shields.io/badge/Mybatis-000000?style=flat&logo=Mybatis&logoColor=white"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"><img src="https://img.shields.io/badge/spring-6DB33F?style=flat&logo=Spring&logoColor=white"><img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white">
 
 
-## Projects:
+## 🧑‍💻Projects:
 
   * **펀딩 사이트[펀딩 파이브]:**
   <a href="https://github.com/smdyuq/FundingFive/tree/jaeyun">Github</a>
@@ -33,7 +32,7 @@ VScode, GitHub, java servlet
   >판매자의 기회,아이디어를 구매자가 지원하는 시스템 구조가 [세상에 없던 아이디어를 구현한다]라는 것이 저희 팀명 [F5]의 기능적 의미 새로고침 그리고 코딩의 목적과 일치하다고 생각하여 기획하게 되었습니다.
 
 
-## Work Experience:
+## 📜Work Experience:
 - 물류관리 @세니젠 - (21년 11월 ~ 23년 07월)
   - 식품, 청결관련 테스트 시약및 제품관리 [창고관리 및 자재관리]
 - 물류관리 @와이에스엔 - (18년 05월 ~ 21년 05월)
@@ -48,7 +47,7 @@ VScode, GitHub, java servlet
   - 원스토어 통합 이후 U+ 홈보이 사업 홈스쿨 서비스 운영 
 
 
-## EDUCATION:
+## 🏫EDUCATION:
 - JAVA기반 풀스택(Spring, Vue)웹 개발자 실무 양성과정 @그린컴퓨터 아트학원(안양) - (23년 09월 ~ 24년 02월)
 - (NCS)컴퓨터 응용 설계 @더조은컴퓨터아트학원(안양) - (17년 05월 ~ 17년 7월)
 - 스펙초월 이경일 모바일 게임 멘토 스쿨 @고용노동부, 한국인력공단 - (14년 04월 ~ 14년 08월)
