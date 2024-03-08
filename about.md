@@ -11,9 +11,9 @@ permalink: /about/
 
 
 <p>
-<div class=pull-right>
+<!-- <div class=pull-right>
 ![Octocat](https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506)
-</div>
+</div> -->
 <img src="https://github.com/Jaeyun-Na/test/assets/150643112/94e0b23d-6f2d-4a2e-8de3-e82f04320506" align="right">
 느리지만, 책임감 있는 신입 개발자 나재윤입니다.
 저는 문제를 해결하기 위해 끈질기게 노력하는 사람입니다.<br> 
