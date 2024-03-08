@@ -15,7 +15,7 @@ checkout my projects @
 <a href="https://github.com/Jaeyun-Na">Github</a>
 </p>
 
-## Skills:
+## ⚒️Skills:
 
  **Language:** 
 > Java, Javascript, HTML, CSS, SQL, jQuery
