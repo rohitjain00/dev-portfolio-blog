@@ -15,7 +15,7 @@ checkout my projects @
 ## Skills:
 
  **Language:** 
-> Java, Javascript, HTML, CSS, SQL
+> Java, Javascript, HTML, CSS, SQL, jQuery
 
  **Tools:**
 >  Oracle, eclipce, Apache Tomcat, Spring Framework, DBeaver, 
