@@ -26,7 +26,7 @@ This is a minimal jekyll theme for writing blogs and about yourself.
 
 ## features
  1. Google Analytics
- 2. Dark mode
+ 2. Many themes such as: Default, Solarized, and Sepia. All in light and dark modes.
  3. Disqus comments
  4. Categorization
  5. Emojis Support
