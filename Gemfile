@@ -8,7 +8,7 @@ gem "jekyll-sitemap"
 gem "jekyll-paginate-v2"
 gem "jekyll-minifier"
 gem "jekyll-assets"
-gem "sprockets", "~> 3.7"
+gem "sprockets", "~> 4.0"
 gem "autoprefixer-rails"
 gem "jemoji"
 
