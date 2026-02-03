@@ -1,6 +1,0 @@
-language: ruby
-rvm:
-- 2.6.5
-
-install: gem install dev-portfolio-blog jemoji
-script: jekyll build
