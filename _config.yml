@@ -8,9 +8,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
   - jekyll-minifier
-  - jekyll-assets
-  - sprockets
-  - autoprefixer-rails
   - jemoji
 
 ############################################################
@@ -97,56 +94,10 @@ jekyll-minifier:
   simple_boolean_attributes: false # Default: false
   compress_js_templates: false # Default: false
   preserve_patterns: # Default: (empty)
-  uglifier_args: 
-    harmony: true
+  # uglifier_args:
+  #   harmony: true
 
 ############################################################
-
-# _config.yml
-assets:
-  source_maps: true
-  destination: "/assets"
-  compression: false
-  gzip: false
-  defaults:
-    integrity:
-      { css, img, js }: false
-  caching:
-    enabled: true
-    path: ".jekyll-cache/assets"
-    type: file
-  # --
-  # Assets you wish to always have compiled.
-  #   This can also be combined with raw_precompile which
-  #   copies assets without running through the pipeline
-  #   making them ultra fast.
-  # --
-  precompile: []
-  raw_precompile: []
-  #
-  # --
-  # baseurl: whether or not to append site.baseurl
-  # destination: the folder you store them in on the CDN.
-  # url: the CDN url (fqdn, or w/ identifier).
-  # --
-  cdn:
-    baseurl: false
-    destination: false
-    url: null
-  # --
-  # See lib/jekyll/assets/config.rb
-  #   for a list of defaults
-  # --
-  sources:
-    - _assets/custom
-  plugins:
-    css: { autoprefixer: {} }
-    img: { optim: {} }
-
-  autoprefixer:
-    browsers:
-      - "last 2 versions"
-      - "IE > 9"
 
 google_analytics: "UA_123456789_1"
 
