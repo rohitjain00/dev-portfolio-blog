@@ -6,8 +6,9 @@ function onLoad() {
     opt.innerHTML = capitalizeFirstLetter(themeName);
     themeSelector.appendChild(opt);
   }
-  if (localStorage.getItem('theme') != null) {
-    themeSelector.value = localStorage.getItem('theme');
+  const theme = localStorage.getItem('theme');
+  if (theme != null) {
+    themeSelector.value = theme;
     toggleTheme();
   }
 }
