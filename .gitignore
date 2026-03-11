@@ -5,3 +5,6 @@ _site
 Gemfile.lock
 vendor
 .jekyll-metadata
+node_modules/
+package-lock.json
+package.json

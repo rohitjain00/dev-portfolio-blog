@@ -1,11 +1,14 @@
 function onLoad() {
   var themeSelector = document.getElementById('themeSelector');
+  var fragment = document.createDocumentFragment();
   for (var themeName in themeMap) {
     var opt = document.createElement('option');
     opt.value = themeName;
     opt.innerHTML = capitalizeFirstLetter(themeName);
-    themeSelector.appendChild(opt);
+    fragment.appendChild(opt);
   }
+  themeSelector.appendChild(fragment);
+
   if (localStorage.getItem('theme') != null) {
     themeSelector.value = localStorage.getItem('theme');
     toggleTheme();
