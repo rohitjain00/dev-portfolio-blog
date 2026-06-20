@@ -1,1 +1,31 @@
-function onLoad(){var e=document.getElementById("themeSelector");for(var t in themeMap){var o=document.createElement("option");o.value=t,o.innerHTML=capitalizeFirstLetter(t),e.appendChild(o)}null!=localStorage.getItem("theme")&&(e.value=localStorage.getItem("theme"),toggleTheme())}function toggleTheme(){var e=themeSelector.value;localStorage.setItem("theme",e),changeTheme(document.getElementsByTagName("html")[0],themeMap[e])}function changeTheme(e,t){e.style.setProperty("--primary-background-color",t["background-color"]),e.style.setProperty("--primary-text-color",t["text-color"]),e.style.setProperty("--primary-highlight-color",t["highlight-color"])}function capitalizeFirstLetter(e){return e.charAt(0).toUpperCase()+e.slice(1)}
+function onLoad() {
+  var themeSelector = document.getElementById('themeSelector');
+  for (var themeName in themeMap) {
+    var opt = document.createElement('option');
+    opt.value = themeName;
+    opt.innerHTML = capitalizeFirstLetter(themeName);
+    themeSelector.appendChild(opt);
+  }
+  const theme = localStorage.getItem('theme');
+  if (theme != null) {
+    themeSelector.value = theme;
+    toggleTheme();
+  }
+}
+
+function toggleTheme() {
+  var themeName = themeSelector.value;
+  localStorage.setItem('theme', themeName);
+  var element = document.documentElement;
+  changeTheme(element, themeMap[themeName]);
+}
+
+function changeTheme(element, theme) {
+  element.style.setProperty("--primary-background-color", theme['background-color']);
+  element.style.setProperty("--primary-text-color", theme['text-color']);
+  element.style.setProperty("--primary-highlight-color", theme['highlight-color']);
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
