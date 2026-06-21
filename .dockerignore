@@ -1,0 +1,10 @@
+.git
+.github
+.bundle
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_site
+screenshots
+vendor
+*.gem

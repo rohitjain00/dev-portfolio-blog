@@ -150,7 +150,7 @@ Create a new folder `_posts` in root folder if not already exists.
 
 1. Create a new markdown file in the format `yyyy-mm-dd-postname.md`
 2. Make sure that disqus's shortname is valid.
-3. Add yaml configuartion to the post
+3. Add YAML configuration to the post. Set `description` to control the summary shown on the blog index.
 
 ```yaml
 ---
@@ -158,9 +158,12 @@ layout: post
 comments: [true | false]
 title: Hello World
 categories: [category1, category2]
+description: A short introduction to this post.
 ---
 Post Text.
 ```
+
+The blog index uses `description` when it is present. Otherwise, it shows a plain-text preview of the post excerpt, limited to 30 words. Individual post pages continue to display the complete post.
 
 ## Troubleshooting
 - ` Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes`
@@ -173,9 +176,25 @@ Bug reports and pull requests are welcome on GitHub at <https://github.com/rohit
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+The project targets Ruby 3.2.0. For a native setup, install Ruby and Node.js, then run `bundle install`.
 
 Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+### Docker
+
+Docker is the recommended setup because it provides the required Ruby and Node.js versions. With Docker Desktop running, build and start the development server:
+
+```sh
+docker compose up --build
+```
+
+Open `http://localhost:4000`. Source files are mounted into the container, so Jekyll rebuilds the site when they change. Stop the server with `Ctrl+C`; use `docker compose down` to remove the container.
+
+To verify that the site compiles without starting the server, run:
+
+```sh
+docker compose build
+```
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `dev-portfolio-blog.gemspec` accordingly.

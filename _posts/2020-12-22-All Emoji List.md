@@ -3,6 +3,7 @@ layout: post
 comments: true
 title : Emojis list
 categories: [Emoji]
+description: A reference list of common emoji names and their Markdown shortcodes.
 ---
 
 

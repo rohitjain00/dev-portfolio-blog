@@ -22,7 +22,11 @@ pagetype: blog
     {% for post in paginator.posts %}
         <li>
             <a class="blog-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="date">{{ post.date | date_to_string }}</span>
-            <div class="excerpt">{{ post.excerpt }}</div>
+            {% assign preview = post.description | default: post.excerpt %}
+            <div class="excerpt">
+                {{ preview | strip_html | normalize_whitespace | truncatewords: 30 }}
+                <a href="{{ post.url | relative_url }}">Read more</a>
+            </div>
         </li>
     {% endfor %}
 </ul>
