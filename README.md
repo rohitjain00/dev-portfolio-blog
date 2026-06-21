@@ -196,8 +196,48 @@ To verify that the site compiles without starting the server, run:
 docker compose build
 ```
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `dev-portfolio-blog.gemspec` accordingly.
+The gem contains the files under `_layouts`, `_includes`, `_sass`, and `assets`, plus the README, license, and changelog. Update `spec.files` in `dev-portfolio-blog.gemspec` when adding another packaged directory.
+
+## Release
+
+Version 0.2.0 adds the Docker development environment, Ruby 3.2 and Jekyll 4.4 support, short blog-index previews, bounded gem dependencies, and updated Sass and minifier configuration. See [CHANGELOG.md](CHANGELOG.md) for the release history.
+
+Before releasing a new version, update the version in `dev-portfolio-blog.gemspec` and add its changes to `CHANGELOG.md`. Run a clean build and create the gem from the verified container:
+
+```sh
+docker compose build --no-cache
+docker compose run --rm --no-deps site gem build dev-portfolio-blog.gemspec
+```
+
+Inspect the generated gem before publishing:
+
+```sh
+docker compose run --rm --no-deps site gem specification ./dev-portfolio-blog-0.2.0.gem --yaml
+```
+
+Commit the release, create an annotated version tag, and push both:
+
+```sh
+git add dev-portfolio-blog.gemspec CHANGELOG.md
+git commit -m "Release version 0.2.0"
+git tag -a v0.2.0 -m "Release version 0.2.0"
+git push origin master
+git push origin v0.2.0
+```
+
+Sign in interactively so credentials and MFA codes are not stored in the repository or shell history:
+
+```sh
+docker run --rm -it -v "${PWD}:/app" -v "${HOME}/.gem:/root/.gem" -w /app ruby:3.2-bullseye gem signin
+```
+
+Publish the verified artifact using the saved RubyGems credentials:
+
+```sh
+docker run --rm -it -v "${PWD}:/app" -v "${HOME}/.gem:/root/.gem" -w /app ruby:3.2-bullseye gem push dev-portfolio-blog-0.2.0.gem
+```
+
+Never commit `.gem/credentials` or an API key. Confirm the published version at [RubyGems](https://rubygems.org/gems/dev-portfolio-blog).
 
 ### Read about the themes and how it's implemented [here](https://github.com/rohitjain00/dev-portfolio-blog/wiki/Theme-Management)
 
