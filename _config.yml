@@ -94,9 +94,6 @@ jekyll-minifier:
   simple_boolean_attributes: false # Default: false
   compress_js_templates: false # Default: false
   preserve_patterns: # Default: (empty)
-  uglifier_args: 
-    harmony: true
-
 ############################################################
 
 google_analytics: "UA_123456789_1"
