@@ -1,0 +1,15 @@
+services:
+  site:
+    build:
+      context: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app
+    init: true
+    healthcheck:
+      test: ["CMD", "ruby", "-rnet/http", "-e", "Net::HTTP.get_response(URI('http://127.0.0.1:4000')).is_a?(Net::HTTPSuccess) or exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 10s
