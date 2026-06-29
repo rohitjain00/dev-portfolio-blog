@@ -6,7 +6,7 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY Gemfile dev-portfolio-blog.gemspec ./
+COPY Gemfile Gemfile.lock dev-portfolio-blog.gemspec ./
 RUN bundle install
 
 COPY . .

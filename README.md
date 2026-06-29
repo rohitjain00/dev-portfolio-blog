@@ -124,14 +124,16 @@ title: Categories
 
 Path is relative to the root directory
 ```yaml
-resume_url: [PATH_TO_RESUME]
-author_name: [YOUR_NAME]
-description: [SITE_DESCRIPTION]
-url: [WEBSITE_URL]
-google_analytics: '[google analytics Id]'
+resume_url: ""
+author_name: "Your Name"
+description: "A short description of the site."
+url: "https://your-domain.example"
+google_analytics: "G-XXXXXXXXXX"
 disqus:
-    shortname: [discus-shotname]
+  shortname: ""
 ```
+
+Leave `resume_url` blank to hide the Resume navigation link. Leave `disqus.shortname` blank to disable comments. The dummy `G-XXXXXXXXXX` value keeps Google Analytics disabled; replace it with a real measurement ID only when you want analytics enabled.
 
 ### Minifier
 
@@ -149,7 +151,7 @@ Visit [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/blob/m
 Create a new folder `_posts` in root folder if not already exists.
 
 1. Create a new markdown file in the format `yyyy-mm-dd-postname.md`
-2. Make sure that disqus's shortname is valid.
+2. Set `comments: true` only when `disqus.shortname` is configured.
 3. Add YAML configuration to the post. Set `description` to control the summary shown on the blog index.
 
 ```yaml
@@ -176,27 +178,80 @@ Bug reports and pull requests are welcome on GitHub at <https://github.com/rohit
 
 ## Development
 
-The project targets Ruby 3.2.0 and Jekyll 4.4. For a native setup, install Ruby and Node.js, then run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+The project targets Ruby 3.2 and Jekyll 4.4. The repository is both the theme source and a demo Jekyll site, so running it locally lets you preview changes to the layouts, includes, Sass, JavaScript, and sample pages.
 
 ### Docker
 
-Docker is the recommended setup because it provides the required Ruby and Node.js versions. With Docker Desktop running, build and start the development server:
+Docker is the recommended setup because it provides the required Ruby, Bundler, Jekyll, and Node.js runtime without installing them on your host machine.
+
+Start Docker Desktop first. On Windows, make sure your terminal can access Docker; if `docker info` returns a permission error, open a new terminal after Docker Desktop starts or run the terminal with Docker access.
+
+Build the image and start the demo site:
 
 ```sh
-docker compose up --build
+docker compose -f compose.yml up --build
 ```
 
-Open `http://localhost:4000`. Source files are mounted into the container, so Jekyll rebuilds the site when they change. Stop the server with `Ctrl+C`; use `docker compose down` to remove the container.
+Open `http://localhost:4000`.
+
+Source files are mounted into the container, so Jekyll rebuilds the site when they change. Stop the server with `Ctrl+C`; remove the container with:
+
+```sh
+docker compose -f compose.yml down
+```
+
+If the server starts but `http://localhost:4000` does not load, recreate the container so Docker applies the port mapping:
+
+```sh
+docker compose -f compose.yml down --remove-orphans
+docker compose -f compose.yml up --build --force-recreate
+```
+
+Confirm that the `PORTS` column includes `127.0.0.1:4000->4000/tcp`:
+
+```sh
+docker compose -f compose.yml ps
+```
 
 To verify that the site compiles without starting the server, run:
 
 ```sh
-docker compose build
+docker compose -f compose.yml build
 ```
 
+If dependencies were changed or Docker reused an old bundle layer, rebuild without cache:
+
+```sh
+docker compose -f compose.yml build --no-cache
+```
+
+To run one-off Jekyll or Bundler commands in the same environment:
+
+```sh
+docker compose -f compose.yml run --rm site bundle exec jekyll build
+docker compose -f compose.yml run --rm site bundle update dev-portfolio-blog
+```
+
+Run `bundle update dev-portfolio-blog` after changing `dev-portfolio-blog.gemspec` so the local demo lockfile reflects the current theme version and dependency bounds.
+
+### Native Ruby
+
+If you prefer not to use Docker, install Ruby 3.2, Bundler, and Node.js, then run:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+Open `http://localhost:4000`. Use `bundle exec jekyll build` for a compile-only check.
+
 The gem contains the files under `_layouts`, `_includes`, `_sass`, and `assets`, plus the README, license, and changelog. Update `spec.files` in `dev-portfolio-blog.gemspec` when adding another packaged directory.
+
+### Demo Publishing
+
+The GitHub Actions workflow builds the demo site into `_site` and publishes that generated output to the `sample-site` branch. Configure GitHub Pages to serve from the `sample-site` branch.
+
+The local `_site` directory is ignored because it is generated output. Rebuild it with Docker or `bundle exec jekyll build`; do not edit files inside `_site` by hand.
 
 ## Release
 

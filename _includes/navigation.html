@@ -14,9 +14,11 @@
           Blog
         </a>
       </li>
-      <li>
-        <a href = "{{ site.resume_url | relative_url }}">
-          Resume
-        </a>
-      </li>
+      {% if site.resume_url and site.resume_url != "" %}
+        <li>
+          <a href = "{{ site.resume_url | relative_url }}">
+            Resume
+          </a>
+        </li>
+      {% endif %}
 </ul>

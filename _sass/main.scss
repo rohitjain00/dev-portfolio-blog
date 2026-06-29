@@ -16,12 +16,42 @@ html {
   padding: 0;
   margin: 0;
 }
+html[data-theme="default-dark"] {
+  --primary-background-color: #222;
+  --primary-text-color: white;
+  --primary-highlight-color: #2e2e2e;
+}
+html[data-theme="solarized-light"] {
+  --primary-background-color: #fdf6e3;
+  --primary-text-color: #657b83;
+  --primary-highlight-color: #eee8d5;
+}
+html[data-theme="solarized-dark"] {
+  --primary-background-color: #002b36;
+  --primary-text-color: #839496;
+  --primary-highlight-color: #073642;
+}
+html[data-theme="sepia-light"] {
+  --primary-background-color: #f4ecd8;
+  --primary-text-color: #5b4636;
+  --primary-highlight-color: #e4d5b7;
+}
+html[data-theme="sepia-dark"] {
+  --primary-background-color: #3e2c1c;
+  --primary-text-color: #d8c3a5;
+  --primary-highlight-color: #4b382a;
+}
 
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   transition: background 0.1s ease-in, color 0.1s ease-in;
   // font-size: 120%;
+}
+a:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--primary-text-color);
+  outline-offset: 3px;
 }
 .mid-section-home {
   text-align: center;
@@ -31,11 +61,12 @@ body {
   align-content: center;
   width: 100%;
   max-width: 400px;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100svh;
   margin: auto;
   font-size: 1.5rem;
   @include mediaQuery(phone-width) {
-    font-size: 1 rem;
+    font-size: 1rem;
     span {
       display: none;
     }
@@ -157,55 +188,6 @@ body {
     }
     a {
       color: var(--primary-text-color);
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        border-bottom: 2px solid  var(--primary-text-color);
-        h1 {
-            // align-self: flex-start;
-            font-size: 40px;
-            flex-grow: 2;
-            text-align: left;
-            margin: 10px;
-        }
-        ul {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            flex-grow: 5;
-            padding-inline-start: 0;
-            li {
-                padding: 0 20px;
-                list-style-type: none;
-                a {
-                    text-decoration : none;
-                    color: var(--primary-text-color);
-                    &:hover {
-                        border-bottom: 2px solid var(--primary-text-color);
-                        color: var(--primary-text-color);
-                    }
-                }
-                @include mediaQuery(phone-width) {
-                    text-align: center;
-                    padding: 0 10px;
-                }
-            }
-        }
-        @include mediaQuery(tablet-width) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            ul {
-                justify-content: center;
-            }
-            h1 {
-                text-align: center;
-            }
-        }
     }
   }
 }
@@ -217,7 +199,9 @@ body {
   background: var(--primary-background-color);
   color: var(--primary-text-color);
   border-radius: 5px;
-  border: 0;
+  border: 1px solid var(--primary-text-color);
+  max-width: calc(100vw - 10px);
+  z-index: 2;
 }
 .post-footer {
   margin-top: 50px;
@@ -225,6 +209,58 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.share-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  vertical-align: middle;
+  a {
+    align-items: center;
+    display: inline-flex;
+    height: 36px;
+    justify-content: center;
+    width: 32px;
+  }
+  svg {
+    fill: #d5d5d5;
+    height: 16px;
+  }
+  .facebook:hover svg,
+  .facebook:focus-visible svg {
+    fill: #3b5998;
+  }
+  .twitter:hover svg,
+  .twitter:focus-visible svg {
+    fill: #55acee;
+  }
+  .linkedin:hover svg,
+  .linkedin:focus-visible svg {
+    fill: #0077b5;
+  }
+  .pinterest:hover svg,
+  .pinterest:focus-visible svg {
+    fill: #cb2027;
+  }
+  .mail:hover svg,
+  .mail:focus-visible svg {
+    fill: #7d7d7d;
+  }
+  .facebook svg {
+    height: 18px;
+  }
+  .twitter svg,
+  .pinterest svg {
+    height: 20px;
+  }
+  .linkedin svg {
+    height: 19px;
+  }
+  .mail svg {
+    height: 14px;
+  }
 }
 .blog-list {
   list-style: none;
@@ -269,4 +305,3 @@ body {
     margin: 10px 0px;
     overflow: auto;
   }
-}

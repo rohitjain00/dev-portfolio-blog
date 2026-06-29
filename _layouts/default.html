@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{"/favicon.ico" | relative_url }}" type="image/x-icon" />
+    {% if site.disqus.shortname and site.disqus.shortname != "" %}
     <link rel="dns-prefetch" href="https://{{ site.disqus.shortname }}.disqus.com">
+    {% endif %}
     <meta
     itemprop="description"
     name="description"
@@ -22,14 +24,40 @@
           {{ site.title }}
       {% endif %}
     </title>
-    <!-- async load css file -->
-    <link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}" media="none" onload="if(media!='all')media='all'">
-    <!-- Load css when script is disabled -->
-    <noscript><link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}"></noscript>
+    <style>
+      html {
+        --primary-background-color: white;
+        --primary-text-color: #222;
+        --primary-highlight-color: #eee;
+        background: var(--primary-background-color);
+        color: var(--primary-text-color);
+      }
+      body {
+        background: var(--primary-background-color);
+        color: var(--primary-text-color);
+      }
+    </style>
+    <script>
+      (function() {
+        var themes = ['default-light', 'default-dark', 'solarized-light', 'solarized-dark', 'sepia-light', 'sepia-dark'];
+        try {
+          var theme = localStorage.getItem('theme');
+          if (themes.indexOf(theme) === -1) {
+            return;
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (error) {
+          return;
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url}}">
 
     <!-- Dns Prefetch the google analytics -->
+    {% if site.google_analytics and site.google_analytics != "" and site.google_analytics != "G-XXXXXXXXXX" %}
     <link rel="dns-prefetch" href="www.googletagmanager.com">
     <link rel="dns-prefetch" href="www.google-analytics.com">
+    {% endif %}
 
 
 
@@ -37,12 +65,14 @@
     <script defer src="{{"/assets/js/theme.js" | relative_url }}"></script>
     <script defer src="{{"/assets/js/script.js" | relative_url }}"></script>
 
-    {% include analytics.html %}
+    {% if site.google_analytics and site.google_analytics != "" and site.google_analytics != "G-XXXXXXXXXX" %}
+      {% include analytics.html %}
+    {% endif %}
     {% feed_meta %}
     {% seo %}
 
   </head>
-    <body onload="onLoad()">
+    <body>
       {% include themeSelector.html %}
       {{ content }}
     </body>

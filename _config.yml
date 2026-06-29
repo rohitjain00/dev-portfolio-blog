@@ -1,6 +1,6 @@
-# resume_url: "Resume.pdf"
+resume_url: ""
 author_name: "John Doe"
-url: johndoe.com
+url: "https://example.com"
 
 plugins:
   - jekyll-seo-tag
@@ -10,6 +10,18 @@ plugins:
   - jekyll-minifier
   - jemoji
 
+exclude:
+  - Dockerfile
+  - compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - "*.gem"
+  - "*.gemspec"
+  - README.md
+  - CHANGELOG.md
+  - vendor
+  - screenshots
+
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
 # The values here represent the defaults if nothing is set
@@ -18,7 +30,7 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: "posts"
@@ -96,10 +108,10 @@ jekyll-minifier:
   preserve_patterns: # Default: (empty)
 ############################################################
 
-google_analytics: "UA_123456789_1"
+google_analytics: "G-XXXXXXXXXX"
 
 # Disqus Comments
 disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: my_disqus_shortname
+  shortname: ""

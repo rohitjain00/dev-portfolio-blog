@@ -1,29 +1,37 @@
+document.addEventListener('DOMContentLoaded', onLoad);
+
 function onLoad() {
   var themeSelector = document.getElementById('themeSelector');
+  if (!themeSelector) {
+    return;
+  }
   for (var themeName in themeMap) {
     var opt = document.createElement('option');
     opt.value = themeName;
     opt.innerHTML = capitalizeFirstLetter(themeName);
-    themeSelector.appendChild(opt);
+      themeSelector.appendChild(opt);
   }
+  themeSelector.addEventListener('change', toggleTheme);
   const theme = localStorage.getItem('theme');
-  if (theme != null) {
+  if (theme != null && themeMap[theme]) {
     themeSelector.value = theme;
     toggleTheme();
   }
 }
 
 function toggleTheme() {
+  var themeSelector = document.getElementById('themeSelector');
+  if (!themeSelector || !themeMap[themeSelector.value]) {
+    return;
+  }
   var themeName = themeSelector.value;
   localStorage.setItem('theme', themeName);
   var element = document.documentElement;
-  changeTheme(element, themeMap[themeName]);
+  changeTheme(element, themeName);
 }
 
-function changeTheme(element, theme) {
-  element.style.setProperty("--primary-background-color", theme['background-color']);
-  element.style.setProperty("--primary-text-color", theme['text-color']);
-  element.style.setProperty("--primary-highlight-color", theme['highlight-color']);
+function changeTheme(element, themeName) {
+  element.setAttribute('data-theme', themeName);
 }
 
 function capitalizeFirstLetter(string) {

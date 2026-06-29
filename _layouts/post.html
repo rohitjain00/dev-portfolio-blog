@@ -14,14 +14,15 @@ layout: description
     {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
-      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+      {% assign category_slug = category | slugize %}
+      <a href="{{ '/categories/#' | append: category_slug | relative_url }}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>
 <div>{% include share_buttons.html %}</div>
 
 </div>
-{% if site.disqus.shortname and page.comments %}
+{% if site.disqus.shortname and site.disqus.shortname != "" and page.comments %}
   <hr>
   {% include disqus_comments.html %}
 {% endif %}
