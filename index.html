@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/dev-portfolio-blog/favicon.ico" type="image/x-icon" />
-    <link rel="dns-prefetch" href="https://my_disqus_shortname.disqus.com">
+    
     <meta
     itemprop="description"
     name="description"
@@ -18,14 +18,37 @@
           Rohit Jain
       
     </title>
-    <!-- async load css file -->
-    <link rel="stylesheet" href="/dev-portfolio-blog/assets/css/styles.css" media="none" onload="if(media!='all')media='all'">
-    <!-- Load css when script is disabled -->
-    <noscript><link rel="stylesheet" href="/dev-portfolio-blog/assets/css/styles.css"></noscript>
+    <style>
+      html {
+        --primary-background-color: white;
+        --primary-text-color: #222;
+        --primary-highlight-color: #eee;
+        background: var(--primary-background-color);
+        color: var(--primary-text-color);
+      }
+      body {
+        background: var(--primary-background-color);
+        color: var(--primary-text-color);
+      }
+    </style>
+    <script>
+      (function() {
+        var themes = ['default-light', 'default-dark', 'solarized-light', 'solarized-dark', 'sepia-light', 'sepia-dark'];
+        try {
+          var theme = localStorage.getItem('theme');
+          if (themes.indexOf(theme) === -1) {
+            return;
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (error) {
+          return;
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="/dev-portfolio-blog/assets/css/styles.css">
 
     <!-- Dns Prefetch the google analytics -->
-    <link rel="dns-prefetch" href="www.googletagmanager.com">
-    <link rel="dns-prefetch" href="www.google-analytics.com">
+    
 
 
 
@@ -33,35 +56,26 @@
     <script defer src="/dev-portfolio-blog/assets/js/theme.js"></script>
     <script defer src="/dev-portfolio-blog/assets/js/script.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA_123456789_1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA_123456789_1');
-</script>
-
-    <link type="application/atom+xml" rel="alternate" href="johndoe.com/dev-portfolio-blog/feed.xml" />
+    
+    <link type="application/atom+xml" rel="alternate" href="https://example.com/dev-portfolio-blog/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.9.0 -->
 <title>Rohit Jain</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Rohit Jain" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="johndoe.com/dev-portfolio-blog/" />
-<meta property="og:url" content="johndoe.com/dev-portfolio-blog/" />
+<link rel="canonical" href="https://example.com/dev-portfolio-blog/" />
+<meta property="og:url" content="https://example.com/dev-portfolio-blog/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Rohit Jain" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Rohit Jain","url":"johndoe.com/dev-portfolio-blog/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","headline":"Rohit Jain","url":"https://example.com/dev-portfolio-blog/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   </head>
-    <body onload="onLoad()">
-      <select id='themeSelector' onchange="toggleTheme()" aria-label="Select theme">
+    <body>
+      <select id="themeSelector" aria-label="Select theme">
 </select>
 
       <div class="mid-section-home">
@@ -87,12 +101,9 @@
           Blog
         </a>
       </li>
-      <li>
-        <a href = "">
-          Resume
-        </a>
-      </li>
+      
 </ul>
+
         </div>
     </div>
 </div>
