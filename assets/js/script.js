@@ -16,7 +16,7 @@ function onLoad() {
 function toggleTheme() {
   var themeName = themeSelector.value;
   localStorage.setItem('theme', themeName);
-  var element = document.getElementsByTagName('html')[0];
+  var element = document.documentElement;
   changeTheme(element, themeMap[themeName]);
 }
 
