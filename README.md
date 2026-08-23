@@ -127,7 +127,8 @@ Path is relative to the root directory
 resume_url: ""
 author_name: "Your Name"
 description: "A short description of the site."
-url: "https://your-domain.example"
+url: "https://therohitjain.com"
+baseurl: "/dev-portfolio-blog"
 google_analytics: "G-XXXXXXXXXX"
 disqus:
   shortname: ""
@@ -192,7 +193,7 @@ Build the image and start the demo site:
 docker compose -f compose.yml up --build
 ```
 
-Open `http://localhost:4000`.
+Open `http://localhost:4000/dev-portfolio-blog/`.
 
 Source files are mounted into the container, so Jekyll rebuilds the site when they change. Stop the server with `Ctrl+C`; remove the container with:
 
@@ -200,7 +201,7 @@ Source files are mounted into the container, so Jekyll rebuilds the site when th
 docker compose -f compose.yml down
 ```
 
-If the server starts but `http://localhost:4000` does not load, recreate the container so Docker applies the port mapping:
+If the server starts but `http://localhost:4000/dev-portfolio-blog/` does not load, recreate the container so Docker applies the port mapping:
 
 ```sh
 docker compose -f compose.yml down --remove-orphans
@@ -243,13 +244,24 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open `http://localhost:4000`. Use `bundle exec jekyll build` for a compile-only check.
+Open `http://localhost:4000/dev-portfolio-blog/`. Use `bundle exec jekyll build` for a compile-only check.
+
+### CI Checks
+
+GitHub Actions runs the project checks on pull requests and pushes to `master`:
+
+- JavaScript syntax checks for `assets/js/script.js` and `assets/js/theme.js`
+- blocked-pattern checks for known theme regressions
+- Jekyll build with `JEKYLL_BASEURL=/dev-portfolio-blog`
+- Docker Compose image build
+
+The deploy step only runs on pushes to `master` after the checks pass.
 
 The gem contains the files under `_layouts`, `_includes`, `_sass`, and `assets`, plus the README, license, and changelog. Update `spec.files` in `dev-portfolio-blog.gemspec` when adding another packaged directory.
 
 ### Demo Publishing
 
-The GitHub Actions workflow builds the demo site into `_site` and publishes that generated output to the `sample-site` branch. Configure GitHub Pages to serve from the `sample-site` branch.
+The GitHub Actions workflow builds the demo site into `_site` and publishes that generated output to the `sample-site` branch. Configure GitHub Pages to serve from the `sample-site` branch. The public demo is published at `https://therohitjain.com/dev-portfolio-blog/`.
 
 The local `_site` directory is ignored because it is generated output. Rebuild it with Docker or `bundle exec jekyll build`; do not edit files inside `_site` by hand.
 

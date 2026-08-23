@@ -1,6 +1,7 @@
 resume_url: ""
 author_name: "John Doe"
-url: "https://example.com"
+url: "https://therohitjain.com"
+baseurl: "/dev-portfolio-blog"
 
 plugins:
   - jekyll-seo-tag
