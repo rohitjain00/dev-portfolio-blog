@@ -13,7 +13,7 @@ pagetype: blog
     <ul>
     <li><a href="{{ "/categories/" | relative_url }}">Categories</a> : </li>
     {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% assign category_name = category | first %}
         <li><a href="{{"/categories/#" | append: category_name | relative_url}}">{{category_name}}</a></li>
     {% endfor %}
 </ul>
