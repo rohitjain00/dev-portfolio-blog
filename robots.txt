@@ -1,1 +1,1 @@
-Sitemap: https://example.com/dev-portfolio-blog/sitemap.xml
+Sitemap: https://therohitjain.com/dev-portfolio-blog/sitemap.xml
